@@ -3,9 +3,71 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Document</title>
   </head>
   <body>
-    開発ブランチです
+    <header class="l-header">
+      <h1 class="p-header__logo">
+        <img src="./img/Green Energy.svg" alt="Green-Energy" />
+      </h1>
+      <nav class="p-header__nav">
+        <ul class="p-heder__nav-lists">
+          <li class="p-header__nav-item">会社概要</li>
+          <li class="p-header__nav-item">事業紹介</li>
+          <li class="p-header__nav-item">社員紹介</li>
+          <li class="p-header__nav-item">Entry</li>
+        </ul>
+      </nav>
+      <button class="p-header__hum-button">
+        <div></div>
+        <div></div>
+        <div></div>
+      </button>
+    </header>
+    <main>
+      <div class="l-container">
+        <section class="l-main-view">
+          <picture class="p-main__image">
+            <source media="(max-width:767px)" srcset="./img/FV.png" />
+            <img src="./img/FV.png" alt="" />
+          </picture>
+          <h1 class="p-main__title">
+            Enveloping<br />
+            The Future
+          </h1>
+          <h2 class="p-main__title--sub mt-16">
+            地球に優しい包装で、未来を包む
+          </h2>
+          <p class="p-main__text c-text mt-48">
+            グリーンエナジー株式会社は、環境保護と持続可能な未来の実現に向けて、革新的な包装ソリューションを提供することをミッションとしています。私たちは、従来のプラスチック包装に代わる、生分解性素材や再生可能資源を活用した包装材の開発と製造に取り組んでいます。<br />
+            環境への配慮と製品の品質を両立させることで、企業の環境負荷低減を支援し、同時に消費者の環境意識向上にも貢献しています。私たちの包装材は、食品から電子機器まで幅広い産業で利用され、循環型社会の構築に寄与しています。
+            <img class="p-main__text-bg" src="./img/stroke-bg.png" alt="" />
+          </p>
+        </section>
+        <section class="l-about mt-80">
+          <h2 class="p-about__title">
+            未来を包む、環境を守る。<br />
+            グリーンエナジーの革新
+          </h2>
+          <p class="p-about__text c-text mt-16">
+            グリーンエナジーは、技術革新と持続可能性を追求し続けることで、地球環境の保護と経済成長の両立を目指しています。私たちと共に、環境に優しい包装の未来を創造を。
+          </p>
+          <a class="p-about__button c-button mt-24" href=""
+            >グリーンエナジーを知る</a
+          >
+        </section>
+      </div>
+    </main>
   </body>
 </html>

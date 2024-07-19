@@ -1,0 +1,39 @@
+@use "variable";
+@use "mixin";
+@use "common";
+
+.l-header {
+  width: 100%;
+  padding: 0 20px;
+  background-color: #fff;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 9999;
+}
+
+.p-header {
+  &__logo {
+    width: 30%;
+    max-width: 200px;
+    height: auto;
+  }
+  &__nav {
+    display: none;
+    color: red;
+  }
+  &__hum-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    div {
+      width: 4px;
+      height: 4px;
+      background-color: variable.$green;
+      border-radius: 50%;
+    }
+  }
+}
