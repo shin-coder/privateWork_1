@@ -1,15 +1,13 @@
-@use "variable";
-
-@mixin ButtonStyle($width: 230px, $padding: 16px, $backgroud: "gradient") {
+@mixin buttonStyle(
+  $width: 230px,
+  $padding: 16px,
+  $border-radius: 50px,
+  $backgroud: "gradient"
+) {
   display: block;
-  // background: linear-gradient(
-  //   90deg,
-  //   rgba(79, 172, 179, 1) 0%,
-  //   rgba(62, 153, 112, 1) 100%
-  // );
   width: $width;
   padding: $padding;
-  border-radius: 50px;
+  border-radius: $border-radius;
   @if $backgroud == "gradient" {
     background: linear-gradient(
       90deg,

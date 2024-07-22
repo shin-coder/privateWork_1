@@ -13,7 +13,7 @@
       href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
   <body>
@@ -42,30 +42,79 @@
             <source media="(max-width:767px)" srcset="./img/FV.png" />
             <img src="./img/FV.png" alt="" />
           </picture>
-          <h1 class="p-main__title">
-            Enveloping<br />
-            The Future
-          </h1>
-          <h2 class="p-main__title--sub mt-16">
-            地球に優しい包装で、未来を包む
-          </h2>
-          <p class="p-main__text c-text mt-48">
-            グリーンエナジー株式会社は、環境保護と持続可能な未来の実現に向けて、革新的な包装ソリューションを提供することをミッションとしています。私たちは、従来のプラスチック包装に代わる、生分解性素材や再生可能資源を活用した包装材の開発と製造に取り組んでいます。<br />
-            環境への配慮と製品の品質を両立させることで、企業の環境負荷低減を支援し、同時に消費者の環境意識向上にも貢献しています。私たちの包装材は、食品から電子機器まで幅広い産業で利用され、循環型社会の構築に寄与しています。
-            <img class="p-main__text-bg" src="./img/stroke-bg.png" alt="" />
-          </p>
+          <div class="p-main__text-area">
+            <h1 class="p-main__title">
+              Enveloping<br />
+              The Future
+            </h1>
+            <h2 class="p-main__title--sub mt-16">
+              地球に優しい包装で、未来を包む
+            </h2>
+            <p class="c-text p-main__text mt-48">
+              グリーンエナジー株式会社は、環境保護と持続可能な未来の実現に向けて、革新的な包装ソリューションを提供することをミッションとしています。私たちは、従来のプラスチック包装に代わる、生分解性素材や再生可能資源を活用した包装材の開発と製造に取り組んでいます。<br />
+              環境への配慮と製品の品質を両立させることで、企業の環境負荷低減を支援し、同時に消費者の環境意識向上にも貢献しています。私たちの包装材は、食品から電子機器まで幅広い産業で利用され、循環型社会の構築に寄与しています。
+            </p>
+          </div>
         </section>
         <section class="l-about mt-80">
           <h2 class="p-about__title">
             未来を包む、環境を守る。<br />
             グリーンエナジーの革新
           </h2>
-          <p class="p-about__text c-text mt-16">
-            グリーンエナジーは、技術革新と持続可能性を追求し続けることで、地球環境の保護と経済成長の両立を目指しています。私たちと共に、環境に優しい包装の未来を創造を。
-          </p>
-          <a class="p-about__button c-button mt-24" href=""
-            >グリーンエナジーを知る</a
-          >
+          <div class="p-about__details">
+            <p class="p-about__text c-text mt-16">
+              グリーンエナジーは、技術革新と持続可能性を追求し続けることで、地球環境の保護と経済成長の両立を目指しています。私たちと共に、環境に優しい包装の未来を創造を。
+            </p>
+            <a class="p-about__button c-button mt-24" href=""
+              >グリーンエナジーを知る</a
+            >
+          </div>
+        </section>
+        <section class="l-service mt-80">
+          <h2 class="c-head">事業紹介</h2>
+          <ul class="p-service__list mt-48">
+            <li class="p-service__item">
+              <h3 class="p-service__item-title"><sup>01</sup>エコラップ</h3>
+              <p class="c-text p-service__text">
+                生分解性プラスチックを使用した食品包装用フィルム。
+                従来のプラスチックフィルムと同等の保存性能を持ちながら、使用後は自然に分解されます。
+              </p>
+              <a href="" class="c-button--small p-service__link">→</a>
+            </li>
+            <li class="p-service__item">
+              <h3 class="p-service__item-title">
+                <sup>02</sup>グリーンボックス
+              </h3>
+              <p class="c-text p-service__text">
+                再生紙と植物由来インクを使用した段ボール箱。
+                耐久性と環境負荷低減を両立し、さまざまな製品の輸送や保管に適しています。
+              </p>
+              <a href="" class="c-button--small p-service__link">→</a>
+            </li>
+            <li class="p-service__item">
+              <h3 class="p-service__item-title"><sup>03</sup>バイオパック</h3>
+              <p class="c-text p-service__text">
+                バイオマス素材を利用した軽量で丈夫な包装材。電子機器や精密機器の保護に最適で、従来の発泡スチロールの代替として注目されています。
+              </p>
+              <a href="" class="c-button--small p-service__link">→</a>
+            </li>
+          </ul>
+        </section>
+        <section class="l-gallery mt-104">
+          <ul class="p-gallery__area">
+            <li class="p-gallery__item p-item-1 p-gallery__item--square">
+              <img src="./img/gallery-item-1.png" alt="" />
+            </li>
+            <li class="p-gallery__item p-item-2 p-gallery__item--square">
+              <img src="./img/gallery-item-2.png" alt="" />
+            </li>
+            <li class="p-gallery__item p-item-3 p-gallery__item--rectangle">
+              <img src="./img/gallery-item-3.png" alt="" />
+            </li>
+            <li class="p-gallery__item p-item-4 p-gallery__item--rectangle">
+              <img src="./img/gallery-item-4.png" alt="" />
+            </li>
+          </ul>
         </section>
       </div>
     </main>

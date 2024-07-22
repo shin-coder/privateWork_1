@@ -1,0 +1,17 @@
+@use "../setting" as set;
+
+.c-head {
+  font-family: set.$zenkaku;
+  color: set.$black;
+  font-weight: bold;
+  text-align: center;
+  font-size: clamp(2rem, 1.296rem + 3vw, 4rem);
+}
+
+.c-text {
+  font-family: set.$zenkaku;
+  color: set.$black;
+  font-weight: 500;
+  line-height: 2;
+  font-size: clamp(0.875rem, 0.831rem + 0.19vw, 1rem);
+}

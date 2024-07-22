@@ -1,0 +1,36 @@
+@use "../setting" as set;
+
+main {
+  background-color: #ebeaea;
+  background-image: url(../../img/noise-bg.png);
+}
+
+.l-container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+  @include set.media(lg) {
+    padding: 0 80px;
+  }
+}
+
+.l-main-view {
+  @include set.media(lg) {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+.l-about {
+  width: 100%;
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.l-gallery {
+  margin-right: calc(50% - 50vw);
+  margin-left: calc(50% - 50vw);
+  overflow-x: hidden;
+}
