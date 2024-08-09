@@ -1,0 +1,15 @@
+.l-footer {
+  padding: 56px 20px;
+  margin: 0 auto;
+}
+
+.p-footer__nav-container {
+  display: flex;
+  justify-content: space-around;
+  .p-footer__nav-item {
+    font-weight: bold;
+  }
+  .p-item__detail-item {
+    color: #999;
+  }
+}

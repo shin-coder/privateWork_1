@@ -13,7 +13,13 @@
       href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
     <title>Document</title>
   </head>
   <body>
@@ -23,23 +29,41 @@
       </h1>
       <nav class="p-header__nav">
         <ul class="p-heder__nav-lists">
-          <li class="p-header__nav-item">会社概要</li>
-          <li class="p-header__nav-item">事業紹介</li>
-          <li class="p-header__nav-item">社員紹介</li>
-          <li class="p-header__nav-item">Entry</li>
+          <li class="p-header__nav-item"><a href="">会社概要</a></li>
+          <li class="p-header__nav-item"><a href="">事業紹介</a></li>
+          <li class="p-header__nav-item"><a href="">社員紹介</a></li>
+          <li class="p-header__nav-item p-header__entry"><a href="">Entry</a></li>
         </ul>
       </nav>
-      <button class="p-header__hum-button">
+      <button class="p-header__hum-button" id="js-hum">
         <div></div>
         <div></div>
         <div></div>
       </button>
+      <div class="p-sp__menu">
+        <h1 class="p-header__logo--sp">
+          <img src="./img/Green Energy.svg" alt="Green-Energy" />
+        </h1>
+        <ul class="p-sp__menu-list">
+          <li class="p-sp__menu-item"><a href="">会社概要</a></li>
+          <li class="p-sp__menu-item"><a href="">事業紹介</a></li>
+          <li class="p-sp__menu-item"><a href="">社員紹介</a></li>
+          <li class="c-button p-sp__menu-item"><a href="">Entry</a></li>
+        </ul>
+        <ul class="p-ham-menu__image">
+          <li class="p-ham-menu__image-item"><img src="./img/gallery-item-1.png" alt=""></li>
+          <li class="p-ham-menu__image-item"><img src="./img/gallery-item-2.png" alt=""></li>
+          <li class="p-ham-menu__image-item"><img src="./img/gallery-item-3.png" alt=""></li>
+          <li class="p-ham-menu__image-item"><img src="./img/gallery-item-4.png" alt=""></li>
+        </ul>
+      </div>
     </header>
+
     <main>
       <div class="l-container">
         <section class="l-main-view">
           <picture class="p-main__image">
-            <source media="(max-width:767px)" srcset="./img/FV.png" />
+            <source srcset="./img/FV.png" />
             <img src="./img/FV.png" alt="" />
           </picture>
           <div class="p-main__text-area">
@@ -65,7 +89,7 @@
             <p class="p-about__text c-text mt-16">
               グリーンエナジーは、技術革新と持続可能性を追求し続けることで、地球環境の保護と経済成長の両立を目指しています。私たちと共に、環境に優しい包装の未来を創造を。
             </p>
-            <a class="p-about__button c-button mt-24" href=""
+            <a class="c-button p-about__button mt-24" href=""
               >グリーンエナジーを知る</a
             >
           </div>
@@ -116,7 +140,119 @@
             </li>
           </ul>
         </section>
+        <section class="l-interview mt-80">
+          <h2 class="c-head p-interview__head">社員紹介</h2>
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide p-article">
+                <picture class="p-article__image">
+                  <source srcset="./img/employee-1.png" />
+                  <img src="./img/employee-1.png" alt="" />
+                </picture>
+                <h3 class="p-article__title">
+                  デザインで環境保護を推進するクリエイター
+                </h3>
+                <small>山田 真理子 / 2015年入社</small>
+                <a href="" class="c-button--white p-article__button"
+                  >詳しく見る</a
+                >
+              </div>
+              <div class="swiper-slide p-article">
+                <picture class="p-article__image">
+                  <source srcset="./img/employee-1.png" />
+                  <img src="./img/employee-1.png" alt="" />
+                </picture>
+                <h3 class="p-article__title">
+                  デザインで環境保護を推進するクリエイター
+                </h3>
+                <small>山田 真理子 / 2015年入社</small>
+                <a href="" class="c-button--white p-article__button"
+                  >詳しく見る</a
+                >
+              </div>
+              <div class="swiper-slide p-article">
+                <picture class="p-article__image">
+                  <source srcset="./img/employee-1.png" />
+                  <img src="./img/employee-1.png" alt="" />
+                </picture>
+                <h3 class="p-article__title">
+                  デザインで環境保護を推進するクリエイター
+                </h3>
+                <small>山田 真理子 / 2015年入社</small>
+                <a href="" class="c-button--white p-article__button"
+                  >詳しく見る</a
+                >
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="p-interview__bg">Employee interview</div>
+        </section>
+        <section class="l-news mt-80">
+          <div class="p-head-container">
+            <h2 class="c-head p-news__head">News</h2>
+            <div class="p-link-container">
+              <p>ニュース一覧を見る</p>
+              <a href="" class="c-button--small p-news__link">→</a>
+            </div>
+          </div>
+          <ul class="p-news__list">
+            <li class="p-news__item">
+              <time datetime="2024-07-05">2024.07.05</time>
+              <a>WEBサイトをリニューアルしました</a>
+            </li>
+            <li class="p-news__item">
+              <time datetime="2024-06-01">2024.06.01</time>
+              <a>社員イタンビューを更新しました</a>
+            </li>
+          </ul>
+        </section>
+        <section class="l-recruit mt-80">
+          <picture class="p-recruit__image">
+            <source srcset="./img/recruit-image.png">
+            <img src="./img/recruit-image.png" alt="">
+          </picture>
+          <div class="p-recruit__text-area">
+            <h2 class="c-head p-recruit__head">採用情報</h2>
+            <p class="c-text p-recruit__text">私たちと共に、環境に優しい包装の未来を創造できる仲間を募集しています。</p>
+            <div class="p-entry-area">
+              <p>エントリーはこちらから</p>
+              <a href="" class="c-button--small p-entry__button">→</a>
+            </div>
+            <!-- <div class="p-entry-area">
+              <p>中途採用はこちらから</p>
+              <a href="" class="c-button--small p-entry__button">→</a>
+            </div> -->
+          </div>
+        </section>
+      </main>
+
+      <footer class="l-footer">
+        <dl class="p-footer__nav-container">
+          <dd class="c-text--small p-footer__nav-item"><a href="">会社概要</a></dd>
+          <dd class="c-text--small p-footer__nav-item">
+            事業紹介
+            <ul class="p-item__detail-list">
+              <li class="c-text--small p-item__detail-item"><a href="">エコラップ</a></li>
+              <li class="c-text--small p-item__detail-item"><a href="">グリーンボックス</a></li>
+              <li class="c-text--small p-item__detail-item"><a href="">バイオラップ</a></li>
+            </ul>
+          </dd class="p-footer__nav-item">
+          <dd class="c-text--small p-footer__nav-item">社員紹介</dd>
+          <dd class="c-text--small p-footer__nav-item">
+            採用情報
+            <!-- <ul class="p-item__detail-list">
+              <li class="c-text--small p-item__detail-item"><a href="">新卒採用</a></li>
+              <li class="c-text--small p-item__detail-item"><a href="">中途採用</a></li>
+            </ul> -->
+          </dd>
+        </dl>
+        <div class="p-footer__logo mt-32">
+          <img src="./img/Green Energy.svg" alt="">
+        </div>
+      </footer>
       </div>
-    </main>
   </body>
 </html>

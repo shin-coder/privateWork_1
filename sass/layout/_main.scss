@@ -10,6 +10,9 @@ main {
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 20px;
+  @include set.media(md) {
+    padding: 0 40px;
+  }
   @include set.media(lg) {
     padding: 0 80px;
   }
@@ -33,4 +36,35 @@ main {
   margin-right: calc(50% - 50vw);
   margin-left: calc(50% - 50vw);
   overflow-x: hidden;
+}
+
+.l-interview {
+  position: relative;
+  background: linear-gradient(
+    90deg,
+    rgba(79, 172, 179, 1) 0%,
+    rgba(62, 153, 112, 1) 100%
+  );
+  color: #fff;
+  margin-right: calc(50% - 50vw);
+  margin-left: calc(50% - 50vw);
+  padding-left: calc(50vw - 50%);
+  padding-right: calc(50vw - 50%);
+  padding-top: 64px;
+  padding-bottom: 64px;
+  border-radius: 50px;
+  overflow-x: hidden;
+}
+
+.l-news {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.l-recruit {
+  margin-right: calc(50% - 50vw);
+  margin-left: calc(50% - 50vw);
+  overflow-x: hidden;
+  padding-bottom: 80px;
 }
