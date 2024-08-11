@@ -29,13 +29,31 @@ main {
 .l-about {
   width: 100%;
   max-width: 950px;
-  margin: 0 auto;
+  margin-top: 80px;
+  margin-right: auto;
+  margin-left: auto;
+  @include set.media(lg) {
+    margin-top: 140px;
+  }
+}
+
+.l-service {
+  margin-top: 80px;
+  margin-right: auto;
+  margin-left: auto;
+  @include set.media(lg) {
+    margin-top: 140px;
+  }
 }
 
 .l-gallery {
+  margin-top: 100px;
   margin-right: calc(50% - 50vw);
   margin-left: calc(50% - 50vw);
   overflow-x: hidden;
+  @include set.media(lg) {
+    margin-top: 160px;
+  }
 }
 
 .l-interview {
@@ -54,17 +72,43 @@ main {
   padding-bottom: 64px;
   border-radius: 50px;
   overflow-x: hidden;
+  margin-top: 80px;
+  @include set.media(lg) {
+    margin-top: 160px;
+  }
 }
 
 .l-news {
   width: 100%;
   max-width: 800px;
-  margin: 0 auto;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 80px;
+  @include set.media(lg) {
+    margin-top: 160px;
+  }
 }
 
 .l-recruit {
+  margin-top: 80px;
   margin-right: calc(50% - 50vw);
   margin-left: calc(50% - 50vw);
   overflow-x: hidden;
+  padding-bottom: 80px;
+  @include set.media(lg) {
+    margin-top: 160px;
+  }
+}
+
+.l-introduction {
+  padding-top: 100px;
+}
+
+.l-mission {
+  margin-top: 80px;
+}
+
+.l-outline {
+  margin-top: 80px;
   padding-bottom: 80px;
 }

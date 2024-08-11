@@ -1,6 +1,18 @@
+@use "../setting" as set;
+
 .l-footer {
-  padding: 56px 20px;
+  padding: 56px 20px 0;
   margin: 0 auto;
+}
+
+.p-footer__logo {
+  margin-top: 48px;
+  @include set.media(lg) {
+    margin-top: 80px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
+  }
 }
 
 .p-footer__nav-container {
