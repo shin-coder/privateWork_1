@@ -54,6 +54,7 @@
       }
     }
   }
+
   &__hum-button {
     position: relative;
     z-index: 99999;
@@ -78,6 +79,13 @@
     @include set.media(lg) {
       display: none;
     }
+  }
+}
+
+.p-header__nav-item a {
+  transition: 0.5s;
+  &:hover {
+    opacity: 0.5;
   }
 }
 

@@ -1,0 +1,32 @@
+@use "../setting" as set;
+@use "../common/button" as button;
+@use "../common/typeFace" as type;
+
+.p-interview__thumbnail {
+  width: 100%;
+  max-width: 800px;
+}
+
+.p-interview__title {
+  font-family: set.$zenkaku;
+  font-weight: 500;
+  color: set.$black;
+  font-size: 32px;
+  margin-top: 32px;
+}
+
+.p-interview__employee-name {
+  display: inline-block;
+  margin-top: 16px;
+}
+
+.p-interview__text {
+  margin-top: 40px;
+}
+
+.p-button__next-interview {
+  width: 300px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 40px;
+}

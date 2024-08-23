@@ -66,6 +66,10 @@
     font-size: clamp(0.875rem, 0.831rem + 0.19vw, 1rem);
     margin-left: auto;
     margin-right: 0;
+    transition: 0.5s;
+    &:hover {
+      opacity: 0.6;
+    }
   }
 }
 
@@ -102,6 +106,10 @@
   &__link {
     margin-right: 0;
     margin-left: auto;
+    transition: 0.5s;
+    &:hover {
+      opacity: 0.6;
+    }
   }
 }
 
@@ -149,7 +157,7 @@
 }
 
 .swiper-pagination {
-  padding-bottom: 16px;
+  padding-bottom: 80px;
 }
 
 .swiper-button-next,
@@ -162,7 +170,7 @@
 .p-article {
   & .p-article__image {
     display: block;
-    max-width: 530px;
+    max-width: 400px;
     width: 85%;
     margin: 0 auto;
   }
@@ -170,7 +178,7 @@
     text-align: center;
     font-size: clamp(1rem, 0.824rem + 0.75vw, 1.5rem);
     font-weight: bold;
-    margin-top: 16px;
+    margin-top: 32px;
   }
   small {
     display: block;
@@ -181,6 +189,10 @@
   & .p-article__button {
     margin: 0 auto;
     margin-top: 20px;
+    transition: 0.5s;
+    &:hover {
+      opacity: 0.6;
+    }
   }
 }
 
@@ -193,10 +205,28 @@
   font-family: set.$hind;
   font-weight: bold;
   color: #fff;
-  font-size: clamp(4rem, 1.937rem + 8.8vw, 12.5rem);
+  font-size: clamp(3rem, 2.296rem + 3vw, 5rem);
   opacity: 0.3;
   text-transform: uppercase;
   white-space: nowrap;
+  .loop-1 {
+    animation: loop 200s linear infinite;
+  }
+  .loop-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: loop 200s -100s linear infinite;
+  }
+}
+
+@keyframes loop {
+  0% {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-200%);
+  }
 }
 
 .p-head-container {
@@ -213,6 +243,13 @@
   p {
     font-family: set.$zenkaku;
     font-size: clamp(0.75rem, 0.662rem + 0.38vw, 1rem);
+  }
+}
+
+.p-news__link {
+  transition: 0.5s;
+  &:hover {
+    opacity: 0.6;
   }
 }
 
@@ -286,5 +323,9 @@
   .p-entry__button {
     background: #fff;
     color: set.$green;
+    transition: 0.5s;
+    &:hover {
+      opacity: 0.6;
+    }
   }
 }

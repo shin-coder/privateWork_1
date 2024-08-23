@@ -25,14 +25,14 @@
   <body>
     <header class="l-header">
       <h1 class="p-header__logo">
-        <img src="./img/Green Energy.svg" alt="Green-Energy" />
+        <a href="#"><img src="./img/Green Energy.svg" alt="Green-Energy" /></a>
       </h1>
       <nav class="p-header__nav">
         <ul class="p-heder__nav-lists">
-          <li class="p-header__nav-item"><a href="">会社概要</a></li>
-          <li class="p-header__nav-item"><a href="">事業紹介</a></li>
-          <li class="p-header__nav-item"><a href="">社員紹介</a></li>
-          <li class="p-header__nav-item p-header__entry"><a href="">Entry</a></li>
+          <li class="c-text p-header__nav-item"><a href="/about.html">会社概要</a></li>
+          <li class="c-text p-header__nav-item"><a href="#service">事業紹介</a></li>
+          <li class="c-text p-header__nav-item"><a href="#interview">社員紹介</a></li>
+          <li class="c-text p-header__nav-item p-header__entry"><a href="">Entry</a></li>
         </ul>
       </nav>
       <button class="p-header__hum-button" id="js-hum">
@@ -42,12 +42,12 @@
       </button>
       <div class="p-sp__menu">
         <h1 class="p-header__logo--sp">
-          <img src="./img/Green Energy.svg" alt="Green-Energy" />
+          <a href="./index.html"><img src="./img/Green Energy.svg" alt="Green-Energy" /></a>
         </h1>
         <ul class="p-sp__menu-list">
-          <li class="p-sp__menu-item"><a href="">会社概要</a></li>
-          <li class="p-sp__menu-item"><a href="">事業紹介</a></li>
-          <li class="p-sp__menu-item"><a href="">社員紹介</a></li>
+          <li class="c-text p-sp__menu-item"><a href="./about.html">会社概要</a></li>
+          <li class="c-text p-sp__menu-item"><a href="">事業紹介</a></li>
+          <li class="c-text p-sp__menu-item"><a href="./interview.html">社員紹介</a></li>
           <li class="c-button p-sp__menu-item"><a href="">Entry</a></li>
         </ul>
         <ul class="p-ham-menu__image">
@@ -89,12 +89,12 @@
             <p class="p-about__text c-text mt-16">
               グリーンエナジーは、技術革新と持続可能性を追求し続けることで、地球環境の保護と経済成長の両立を目指しています。私たちと共に、環境に優しい包装の未来を創造を。
             </p>
-            <a class="c-button p-about__button mt-24" href=""
+            <a class="c-button p-about__button mt-24" href="./about.html"
               >グリーンエナジーを知る</a
             >
           </div>
         </section>
-        <section class="l-service">
+        <section id="service" class="l-service">
           <h2 class="c-head">事業紹介</h2>
           <ul class="p-service__list mt-48">
             <li class="p-service__item">
@@ -103,7 +103,7 @@
                 生分解性プラスチックを使用した食品包装用フィルム。
                 従来のプラスチックフィルムと同等の保存性能を持ちながら、使用後は自然に分解されます。
               </p>
-              <a href="" class="c-button--small p-service__link">→</a>
+              <a href="./service-ecolap.html" class="c-button--small p-service__link">→</a>
             </li>
             <li class="p-service__item">
               <h3 class="p-service__item-title">
@@ -140,7 +140,7 @@
             </li>
           </ul>
         </section>
-        <section class="l-interview">
+        <section id="interview" class="l-interview">
           <h2 class="c-head p-interview__head">社員紹介</h2>
           <div class="swiper mySwiper">
             <div class="swiper-wrapper">
@@ -153,7 +153,7 @@
                   デザインで環境保護を推進するクリエイター
                 </h3>
                 <small>山田 真理子 / 2015年入社</small>
-                <a href="" class="c-button--white p-article__button"
+                <a href="./interview.html" class="c-button--white p-article__button"
                   >詳しく見る</a
                 >
               </div>
@@ -188,7 +188,16 @@
             <div class="swiper-button-prev"></div>
           </div>
           <div class="swiper-pagination"></div>
-          <div class="p-interview__bg">Employee interview</div>
+          <div class="p-interview__bg">
+            <div class="loop-1">
+              Employee interview Employee interview Employee interview Employee interview
+              Employee interview Employee interview Employee interview Employee interview
+            </div>
+            <div class="loop-2">
+              Employee interview Employee interview Employee interview Employee interview
+              Employee interview Employee interview Employee interview Employee interview
+            </div>
+          </div>
         </section>
         <section class="l-news">
           <div class="p-head-container">
@@ -227,21 +236,21 @@
             </div> -->
           </div>
         </section>
-      </main>
+    </main>
 
-      <footer class="l-footer">
+    <footer class="l-footer">
         <dl class="p-footer__nav-container">
-          <dd class="c-text--small p-footer__nav-item"><a href="">会社概要</a></dd>
-          <dd class="c-text--small p-footer__nav-item">
+          <dd class="c-text p-footer__nav-item"><a href="">会社概要</a></dd>
+          <dd class="c-text p-footer__nav-item">
             事業紹介
             <ul class="p-item__detail-list">
-              <li class="c-text--small p-item__detail-item"><a href="">エコラップ</a></li>
+              <li class="c-text--small p-item__detail-item"><a href="./service-ecolap.html">エコラップ</a></li>
               <li class="c-text--small p-item__detail-item"><a href="">グリーンボックス</a></li>
               <li class="c-text--small p-item__detail-item"><a href="">バイオラップ</a></li>
             </ul>
           </dd class="p-footer__nav-item">
-          <dd class="c-text--small p-footer__nav-item">社員紹介</dd>
-          <dd class="c-text--small p-footer__nav-item">
+          <dd class="c-text p-footer__nav-item">社員紹介</dd>
+          <dd class="c-text p-footer__nav-item">
             採用情報
             <!-- <ul class="p-item__detail-list">
               <li class="c-text--small p-item__detail-item"><a href="">新卒採用</a></li>
@@ -252,7 +261,6 @@
         <div class="p-footer__logo">
           <img src="./img/Green Energy.svg" alt="">
         </div>
-      </footer>
-      </div>
+    </footer>
   </body>
 </html>
