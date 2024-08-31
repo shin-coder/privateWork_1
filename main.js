@@ -59,7 +59,7 @@ tl.fromTo(
       autoAlpha: 1,
       y: 0,
       stagger: 0.1,
-      duration: 0.6,
+      amount: 0.2,
     }
   )
   .fromTo(
