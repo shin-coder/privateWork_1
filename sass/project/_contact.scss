@@ -2,10 +2,6 @@
 @use "../common/button" as button;
 @use "../common/typeFace" as type;
 
-.l-form {
-  padding-bottom: 80px;
-}
-
 .p-contact__wrap {
   position: relative;
 }
@@ -227,12 +223,6 @@ legend {
 
 label {
   display: inline-block;
-}
-
-.l-form__area {
-  max-width: 1000px;
-  margin: 30px auto;
-  padding: 0 30px;
 }
 
 .p-form__item {
