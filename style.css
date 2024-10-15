@@ -62,6 +62,9 @@ body {
     align-items: center;
     gap: 80px;
   }
+  .p-header__nav .p-heder__nav-lists._contact {
+    padding-right: 15px;
+  }
   .p-header__nav .p-heder__nav-lists .p-heder__nav-item a {
     font-size: clamp(0.875rem, 0.732rem + 0.3vw, 1rem);
     color: #333;
@@ -181,6 +184,11 @@ body {
 }
 .p-footer__nav-container .p-item__detail-item {
   color: #999;
+}
+
+.p-footer__nav-item {
+  display: flex;
+  flex-direction: column;
 }
 
 html {
@@ -751,6 +759,7 @@ span {
   display: flex;
   align-items: center;
   gap: 4%;
+  gap: 10%;
   color: #fff;
   margin-top: 32px;
   font-size: clamp(0.875rem, 0.831rem + 0.19vw, 1rem);
@@ -977,6 +986,303 @@ span {
 }
 .p-feature__text {
   margin-top: 100px;
+}
+
+.l-form {
+  padding-bottom: 80px;
+}
+
+.p-contact__wrap {
+  position: relative;
+}
+
+.p-contact__image {
+  position: relative;
+  background-image: url(../../assets/img/contact-image.png);
+  width: 100%;
+  height: min(50vh, 390px);
+  background-size: cover;
+  background-position: center;
+}
+.p-contact__image::before {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  content: " ";
+}
+
+.p-contact__ttl {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  width: 300px;
+  transform: translate(-50%, -50%);
+}
+.p-contact__ttl._main {
+  color: #fff;
+  font-weight: bold;
+  font-size: 3rem;
+  text-align: center;
+}
+.p-contact__ttl._sub {
+  text-align: center;
+  color: #fff;
+  font-size: 0.75rem;
+  margin-top: 15%;
+}
+
+/* ==================================================================
+フォーム部品スタイル
+=================================================================== */
+input[type=text],
+input[type=search],
+input[type=email],
+input[type=url],
+input[type=tel],
+input[type=number],
+textarea {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  padding: 10px 20px 8px 20px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+input[type=password] {
+  /* ユーザーがパスワードを表示/非表示にさせる時、
+  appearance: none; はこの機能を無効にさせる可能性がある。 */
+  width: 100%;
+  padding: 10px 20px 8px 20px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+/*placeholderスタイルの調整
+----------------------------------*/
+/* Placeholder Google Chrome, Safari, Opera 15+, Android, iOS */
+::-webkit-input-placeholder {
+  color: #ccc;
+  font-style: normal;
+}
+
+/* Placeholder Firefox 19+ */
+::-moz-placeholder {
+  opacity: 1;
+  color: #ccc;
+  font-style: normal;
+}
+
+/* Placeholder IE 10+ */
+:-ms-input-placeholder {
+  color: #ccc;
+  font-style: normal;
+}
+
+/*ラジオボタン・チェックボックス
+------------------------------------*/
+input[type=radio],
+input[type=checkbox] {
+  opacity: 0;
+  position: absolute;
+}
+
+/*クリック範囲*/
+input[type=radio] + span,
+input[type=checkbox] + span {
+  display: inline-block;
+  position: relative;
+  margin: 0 2em 0 0;
+  padding: 0.3em 0.3em 0.3em 2em;
+  line-height: 1;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+/*フォーカス時*/
+input[type=radio]:focus + span,
+input[type=checkbox]:focus + span {
+  outline: 1px solid #ccc;
+}
+
+/*ラジオボタンスタイル*/
+input[type=radio] + span:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  width: 1.375em;
+  height: 1.375em;
+  border: 1px solid #999;
+  border-radius: 50%;
+  line-height: 1;
+  background: #fff;
+}
+
+/*ラジオボタンチェック印（未選択）*/
+input[type=radio] + span:after {
+  content: "";
+  display: none;
+}
+
+/*ラジオボタンチェック印（選択）*/
+input[type=radio]:checked + span:after {
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0.2em;
+  width: 1em;
+  height: 1em;
+  margin: 0;
+  padding: 0;
+  border-radius: 50%;
+  background: #3e9970; /*任意の色*/
+  line-height: 1;
+}
+
+/*チェックボックススタイル*/
+input[type=checkbox] + span:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0.4em;
+  /*任意のスタイル*/
+  width: 1.25em;
+  height: 1.25em;
+  border: 1px solid #999;
+  background: #fff;
+  line-height: 1;
+}
+
+/*チェックボックス未チェック時*/
+input[type=checkbox] + span:after {
+  content: "";
+  display: none;
+}
+
+/*チェックボックスチェック時*/
+input[type=checkbox]:checked + span:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0.4em;
+  /*任意の色とスタイル*/
+  width: 0.5em;
+  height: 1em;
+  border-bottom: 3px solid #3d98b4;
+  border-right: 3px solid #3d98b4;
+  transform: rotate(45deg);
+}
+
+/*セレクトボックス
+------------------------------------*/
+select {
+  -webkit-appearance: none;
+  appearance: none;
+  display: block;
+  width: 100%;
+  padding: 10px 30px 8px 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.selectWrap {
+  position: relative;
+  display: block;
+}
+
+.selectWrap::after {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid #999;
+  border-bottom: 2px solid #999;
+  transform: rotate(45deg);
+  pointer-events: none;
+}
+
+fieldset,
+legend {
+  display: contents;
+}
+
+label {
+  display: inline-block;
+}
+
+.l-form__area {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 0 30px;
+}
+
+.p-form__item {
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .p-form__item {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.p-form__ttl {
+  margin-bottom: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .p-form__ttl {
+    width: 30%;
+  }
+  .p-form__boby {
+    width: 70%;
+  }
+  .p-inputFeild._half {
+    width: 50%;
+  }
+  .p-radioList {
+    display: flex;
+  }
+}
+.label-required {
+  font-size: 0.875rem;
+  background-color: rgb(237, 73, 73);
+  color: #fff;
+  border-radius: 4px;
+  padding: 1px 4px;
+  margin-left: 10px;
+}
+
+.label-any {
+  font-size: 0.875rem;
+  background-color: #3e9970;
+  color: #fff;
+  border-radius: 4px;
+  padding: 1px 4px;
+  margin-left: 10px;
+}
+
+.p-submit-btn {
+  display: block;
+}
+.p-submit-btn > button {
+  margin: 0 auto;
 }
 
 /* Utlity

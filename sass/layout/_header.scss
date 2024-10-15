@@ -34,6 +34,9 @@
         display: flex;
         align-items: center;
         gap: 80px;
+        &._contact {
+          padding-right: 15px;
+        }
         .p-heder__nav-item a {
           font-size: clamp(0.875rem, 0.732rem + 0.3vw, 1rem);
           color: #333;

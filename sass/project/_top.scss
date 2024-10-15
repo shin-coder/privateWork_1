@@ -1,6 +1,6 @@
-@use "../setting" as set;
-@use "../common/button" as button;
-@use "../common/typeFace" as type;
+@use '../setting' as set;
+@use '../common/button' as button;
+@use '../common/typeFace' as type;
 
 .active-body {
   overflow-y: hidden;
@@ -283,11 +283,7 @@
 }
 
 .p-recruit__text-area {
-  background: linear-gradient(
-    90deg,
-    rgba(79, 172, 179, 1) 0%,
-    rgba(62, 153, 112, 1) 100%
-  );
+  background: linear-gradient(90deg, rgba(79, 172, 179, 1) 0%, rgba(62, 153, 112, 1) 100%);
   border-radius: 20px;
   transform: translate(20%, -10%);
   padding-top: 24px;
@@ -319,6 +315,8 @@
   display: flex;
   align-items: center;
   gap: 4%;
+  gap: 10%;
+
   color: #fff;
   margin-top: 32px;
   font-size: clamp(0.875rem, 0.831rem + 0.19vw, 1rem);
