@@ -1,0 +1,123 @@
+@use "../setting" as set;
+@use "../common/button" as button;
+
+.p-service__lower-title {
+  font-family: set.$zenkaku;
+  font-weight: 500;
+  font-size: clamp(1.25rem, 0.81rem + 1.88vw, 2.5rem);
+  sup {
+    font-family: set.$hind;
+    color: set.$green;
+    margin-right: 24px;
+  }
+}
+
+.p-service__lower-feature {
+  margin-top: 80px;
+  font-family: set.$zenkaku;
+  color: set.$green;
+  font-weight: 500;
+  font-size: clamp(1.125rem, 1.081rem + 0.19vw, 1.25rem);
+}
+
+.p-service__lower-text {
+  margin-top: 32px;
+}
+
+.p-feature__list {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  @include set.media(lg) {
+    flex-direction: row;
+  }
+}
+
+.p-circle--1,
+.p-circle--2,
+.p-circle--3,
+.p-circle--4 {
+  &::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 13px solid #333333;
+    border-right: 0;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.p-circle--1,
+.p-circle--2,
+.p-circle--3,
+.p-circle--4 {
+  &::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-right: 13px solid #333333;
+    border-left: 0;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.p-circle {
+  position: relative;
+  border: 1px solid #333;
+  padding: 115px 100px;
+  border-radius: 50%;
+  animation: rotation 20s infinite linear;
+}
+
+.p-circle__content {
+  animation: counter-rotation 20s infinite linear;
+}
+
+.p-circle--2,
+.p-circle--3,
+.p-circle--4 {
+  margin-top: -40px;
+  @include set.media(lg) {
+    margin-left: -40px;
+  }
+}
+
+@keyframes rotation {
+  from {
+    // transform: rotate(0deg);
+    rotate: 0deg;
+  }
+  to {
+    // transform: rotate(360deg);
+    rotate: 360deg;
+  }
+}
+
+@keyframes counter-rotation {
+  from {
+    // transform: rotate(0deg);
+    rotate: 0deg;
+  }
+  to {
+    // transform: rotate(-360deg);
+    rotate: -360deg;
+  }
+}
+
+.p-feature__text {
+  margin-top: 100px;
+}

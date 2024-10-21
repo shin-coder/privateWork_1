@@ -1,0 +1,167 @@
+@use "../setting" as set;
+
+html {
+  scroll-behavior: smooth;
+}
+
+main {
+  background-color: #ebeaea;
+  background-image: url(../../img/noise-bg.png);
+}
+
+span {
+  display: inline-block;
+}
+
+.l-container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+  @include set.media(md) {
+    padding: 0 40px;
+  }
+  @include set.media(lg) {
+    padding: 0 80px;
+  }
+}
+
+.l-main-view {
+  @include set.media(lg) {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+.l-about {
+  width: 100%;
+  max-width: 950px;
+  margin-top: 80px;
+  margin-right: auto;
+  margin-left: auto;
+  @include set.media(lg) {
+    margin-top: 140px;
+  }
+}
+
+.l-service {
+  margin-top: 80px;
+  margin-right: auto;
+  margin-left: auto;
+  @include set.media(lg) {
+    margin-top: 140px;
+    padding-right: 80px;
+    padding-left: 80px;
+  }
+}
+
+.l-gallery {
+  margin-top: 100px;
+  margin-right: calc(50% - 50vw);
+  margin-left: calc(50% - 50vw);
+  overflow-x: hidden;
+  @include set.media(lg) {
+    margin-top: 160px;
+  }
+}
+
+.l-interview {
+  position: relative;
+  background: linear-gradient(
+    90deg,
+    rgba(79, 172, 179, 1) 0%,
+    rgba(62, 153, 112, 1) 100%
+  );
+  color: #fff;
+  margin-right: calc(50% - 50vw);
+  margin-left: calc(50% - 50vw);
+  padding-left: calc(50vw - 50%);
+  padding-right: calc(50vw - 50%);
+  padding-top: 100px;
+  padding-bottom: 150px;
+  border-radius: 50px;
+  overflow-x: hidden;
+  margin-top: 80px;
+  @include set.media(lg) {
+    margin-top: 160px;
+  }
+}
+
+.l-news {
+  width: 100%;
+  max-width: 800px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 80px;
+  @include set.media(lg) {
+    margin-top: 160px;
+  }
+}
+
+.l-recruit {
+  margin-top: 80px;
+  margin-right: calc(50% - 50vw);
+  margin-left: calc(50% - 50vw);
+  overflow-x: hidden;
+  padding-bottom: 80px;
+  @include set.media(lg) {
+    margin-top: 160px;
+  }
+}
+
+.l-introduction {
+  padding-top: 100px;
+}
+
+.l-mission {
+  margin-top: 80px;
+  @include set.media(lg) {
+    margin-top: 160px;
+  }
+}
+
+.l-outline {
+  margin-top: 80px;
+  padding-bottom: 80px;
+  @include set.media(lg) {
+    margin-top: 160px;
+  }
+}
+
+.l-interiew__lower {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  @include set.media(lg) {
+    max-width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.l-service__lower {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  @include set.media(lg) {
+    padding-top: 150px;
+  }
+}
+
+.l-interview-archive {
+  width: 100%;
+  max-width: 1280px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 120px 0;
+}
+
+.l-news-list {
+  padding: 100px 0;
+}
+
+.l-form__area {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 0 30px;
+  padding-bottom: 80px;
+}

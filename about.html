@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="assets/style.css" />
+    <script src="main.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="l-header">
+      <h1 class="p-header__logo">
+        <a href="/index.html"
+          ><img src="./assets/img/Green Energy.svg" alt="Green-Energy"
+        /></a>
+      </h1>
+      <nav class="p-header__nav">
+        <ul class="p-heder__nav-lists">
+          <!-- <li class="p-header__nav-item"><a href="#">会社概要</a></li> -->
+          <li class="c-text p-header__nav-item">
+            <a href="./service-ecolap.html">事業紹介</a>
+          </li>
+          <li class="c-text p-header__nav-item">
+            <a href="./interview.html">社員紹介</a>
+          </li>
+          <li class="c-text p-header__nav-item p-header__entry">
+            <a href="/contact.html">Entry</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="p-header__hum-button" id="js-hum">
+        <div></div>
+        <div></div>
+        <div></div>
+      </button>
+      <div class="p-sp__menu">
+        <h1 class="p-header__logo--sp">
+          <img src="./assets/img/Green Energy.svg" alt="Green-Energy" />
+        </h1>
+        <ul class="p-sp__menu-list">
+          <li class="p-sp__menu-item"><a href="">会社概要</a></li>
+          <li class="p-sp__menu-item">
+            <a href="./service-ecolap.html">事業紹介</a>
+          </li>
+          <li class="p-sp__menu-item">
+            <a href="./interview.html">社員紹介</a>
+          </li>
+          <li class="c-button p-sp__menu-item"><a href="">Entry</a></li>
+        </ul>
+        <ul class="p-ham-menu__image">
+          <li class="p-ham-menu__image-item">
+            <img src="./assets/img/gallery-item-1.png" alt="" />
+          </li>
+          <li class="p-ham-menu__image-item">
+            <img src="./assets/img/gallery-item-2.png" alt="" />
+          </li>
+          <li class="p-ham-menu__image-item">
+            <img src="./assets/img/gallery-item-3.png" alt="" />
+          </li>
+          <li class="p-ham-menu__image-item">
+            <img src="./assets/img/gallery-item-4.png" alt="" />
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <div class="l-container">
+        <section class="l-introduction">
+          <div class="p-introduction__title-wrap fade">
+            <h1 class="c-head--en p-introduction__head">
+              About<br />Green Energy
+            </h1>
+            <p class="c-text--small p-introduction__head--sub">
+              グリーンエナジー株式会社について
+            </p>
+          </div>
+          <p class="c-text p-introduction__text fade">
+            グリーンエナジー株式会社は、持続可能なエネルギーソリューションを提供する先駆的企業として、2010年に設立されました。<br />
+            私たちのビジョンは、クリーンで再生可能なエネルギーを通じて、地球環境の保護と経済成長の両立を実現することです。
+          </p>
+        </section>
+        <section class="l-mission">
+          <div class="p-mission__title-wrap fade">
+            <h1 class="c-head--en p-mission__head">Mission</h1>
+            <p class="c-text--small p-mission__head--sub">私たちのミッション</p>
+          </div>
+          <div class="p-mission__title-container">
+            <h2 class="p-mission__title fade">
+              「Enveloping The Future - <br />
+              地球に優しい包み方で、未来を守る」
+            </h2>
+            <p class="c-text p-mission__title-text fade">
+              このミッションのもと、私たちは以下の3つの核心的な価値観を掲げています。
+            </p>
+          </div>
+          <ul class="p-mission__list fade">
+            <li class="p-mission__item">
+              <h3 class="p-mission__item-title">01 イノベーション</h3>
+              <p class="c-text p-mission__item-text">
+                常に最先端の技術と創造的なアイデアを追求し、
+                エネルギー業界に革新をもたらします。
+              </p>
+            </li>
+            <li class="p-mission__item">
+              <h3 class="p-mission__item-title">02 持続可能性</h3>
+              <p class="c-text p-mission__item-text">
+                すべての事業活動において、環境への配慮を最優先し、
+                次世代のために持続可能な未来を創造します。
+              </p>
+            </li>
+            <li class="p-mission__item">
+              <h3 class="p-mission__item-title">03 協働</h3>
+              <p class="c-text p-mission__item-text">
+                顧客、パートナー、地域社会との強固な関係を築き、
+                共に成長し、より大きな影響力を生み出します。
+              </p>
+            </li>
+          </ul>
+        </section>
+        <section class="l-outline fade">
+          <h1 class="c-head p-outline__head">会社概要</h1>
+          <table class="p-outline__table">
+            <tr class="c-text p-outline__list">
+              <td>設立</td>
+              <td>2010年4月1日</td>
+            </tr>
+            <tr class="c-text p-outline__list">
+              <td>資本金</td>
+              <td>5000万円</td>
+            </tr>
+            <tr class="c-text p-outline__list">
+              <td>所在地</td>
+              <td>〒100-0004 <br />東京都千代田区大手町1-6-1 大手町ビル15階</td>
+            </tr>
+            <tr class="c-text p-outline__list">
+              <td>従業員</td>
+              <td>25名（2024年4月現在）</td>
+            </tr>
+            <tr class="c-text p-outline__list">
+              <td>事業</td>
+              <td>
+                ・再生可能エネルギーシステムの開発/販売<br />
+                ・エネルギー効率化コンサルティング<br />
+                ・スマートグリッドソリューションの提供
+              </td>
+            </tr>
+          </table>
+        </section>
+      </div>
+    </main>
+    <footer class="l-footer">
+      <dl class="p-footer__nav-container">
+        <dt class="c-text p-footer__nav-item"><a href="">会社概要</a></dt>
+        <dt class="c-text p-footer__nav-item">
+          事業紹介
+          <ul class="p-item__detail-list">
+            <li class="c-text--small p-item__detail-item">
+              <a href="./service-ecolap.html">エコラップ</a>
+            </li>
+            <li class="c-text--small p-item__detail-item">
+              <a href="">グリーンボックス</a>
+            </li>
+            <li class="c-text--small p-item__detail-item">
+              <a href="">バイオラップ</a>
+            </li>
+          </ul>
+        </dt>
+        <dt class="c-text p-footer__nav-item">社員紹介</dt>
+        <dt class="c-text p-footer__nav-item">
+          採用情報
+          <a class="c-text--small p-item__detail-item" href="/contact.html"
+            >採用フォームはこちら</a
+          >
+          <!-- <ul class="p-item__detail-list">
+            <li class="c-text--small p-item__detail-item"><a href="">新卒採用</a></li>
+            <li class="c-text--small p-item__detail-item"><a href="">中途採用</a></li>
+          </ul> -->
+        </dt>
+      </dl>
+      <div class="p-footer__logo">
+        <img src="./assets/img/Green Energy.svg" alt="" />
+      </div>
+    </footer>
+  </body>
+</html>

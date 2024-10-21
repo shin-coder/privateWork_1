@@ -1,0 +1,41 @@
+@use "../setting" as set;
+
+.c-button {
+  @include set.buttonStyle();
+  color: #fff;
+  font-family: set.$zenkaku;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &::after {
+    margin-left: 4px;
+    content: "→";
+    display: inline-block;
+    font-weight: bold;
+  }
+
+  &--white {
+    @include set.buttonStyle(230px, 16px, 50px, "white");
+    color: set.$green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &::after {
+      margin-left: 4px;
+      content: "→";
+      display: inline-block;
+      font-weight: bold;
+    }
+  }
+}
+
+.c-button--small {
+  @include set.buttonStyle(60px, 10px);
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  @include set.media(lg) {
+    @include set.buttonStyle(80px, 10px);
+    height: 40px;
+  }
+}
