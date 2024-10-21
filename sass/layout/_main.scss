@@ -147,12 +147,21 @@ span {
   }
 }
 
-.l-form {
-  padding-bottom: 80px;
+.l-interview-archive {
+  width: 100%;
+  max-width: 1280px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 120px 0;
+}
+
+.l-news-list {
+  padding: 100px 0;
 }
 
 .l-form__area {
   max-width: 1000px;
   margin: 30px auto;
   padding: 0 30px;
+  padding-bottom: 80px;
 }

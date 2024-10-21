@@ -237,6 +237,30 @@ label {
   margin-bottom: 8px;
 }
 
+/*送信ボタンエリア
+---------------------------------*/
+.btnArea {
+  margin-top: 50px;
+  text-align: center;
+}
+.submitBtn {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 90%;
+  max-width: 300px;
+  margin: 0;
+  padding: 15px;
+  border: 0;
+  border-radius: 50px;
+  background-color: set.$green;
+  color: #fff;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+.submitBtn:hover {
+  opacity: 0.7;
+}
+
 @include set.media(md) {
   .p-form__ttl {
     width: 30%;

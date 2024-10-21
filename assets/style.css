@@ -358,6 +358,25 @@ span {
   }
 }
 
+.l-interview-archive {
+  width: 100%;
+  max-width: 1280px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 120px 0;
+}
+
+.l-news-list {
+  padding: 100px 0;
+}
+
+.l-form__area {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 0 30px;
+  padding-bottom: 80px;
+}
+
 /* Object
 ========================= */
 .c-button {
@@ -988,8 +1007,68 @@ span {
   margin-top: 100px;
 }
 
-.l-form {
-  padding-bottom: 80px;
+.p-interview__archive-title {
+  margin-bottom: 80px;
+}
+
+.p-card-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 64px;
+}
+
+.p-card-list__item {
+  width: 100%;
+  max-width: 240px;
+  width: 320px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s;
+}
+.p-card-list__item:hover {
+  transform: scale(1.05);
+}
+
+.p-card-list__thumbnail {
+  height: 190px;
+}
+.p-card-list__thumbnail img {
+  height: 100%;
+}
+
+.p-card-list__body {
+  padding: 16px;
+}
+
+.p-card-list__employee {
+  display: flex;
+  gap: 8px;
+}
+.p-card-list__employee span {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 500;
+  color: #333;
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+.p-card-list__employee span:nth-child(3) {
+  color: #999;
+}
+
+.p-card-list__copy {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  color: #333;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.p-card-list__link {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  color: #333;
+  font-weight: 500;
+  font-size: 12px;
 }
 
 .p-contact__wrap {
@@ -1226,12 +1305,6 @@ label {
   display: inline-block;
 }
 
-.l-form__area {
-  max-width: 1000px;
-  margin: 30px auto;
-  padding: 0 30px;
-}
-
 .p-form__item {
   margin-bottom: 40px;
 }
@@ -1244,6 +1317,32 @@ label {
 
 .p-form__ttl {
   margin-bottom: 8px;
+}
+
+/*送信ボタンエリア
+---------------------------------*/
+.btnArea {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.submitBtn {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 90%;
+  max-width: 300px;
+  margin: 0;
+  padding: 15px;
+  border: 0;
+  border-radius: 50px;
+  background-color: #3e9970;
+  color: #fff;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.submitBtn:hover {
+  opacity: 0.7;
 }
 
 @media screen and (min-width: 768px) {
