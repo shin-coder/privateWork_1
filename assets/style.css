@@ -1014,20 +1014,22 @@ span {
 .p-card-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   gap: 64px;
 }
 
 .p-card-list__item {
   width: 100%;
-  max-width: 240px;
-  width: 320px;
+  max-width: 300px;
+  height: auto;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.2);
   transition: all 0.3s;
 }
 .p-card-list__item:hover {
-  transform: scale(1.05);
+  transform: scale(1.01);
 }
 
 .p-card-list__thumbnail {
@@ -1038,19 +1040,20 @@ span {
 }
 
 .p-card-list__body {
-  padding: 16px;
+  padding: 24px;
 }
 
 .p-card-list__employee {
   display: flex;
-  gap: 8px;
+  flex-wrap: wrap;
+  gap: 4px;
 }
 .p-card-list__employee span {
   font-family: "Zen Kaku Gothic New", sans-serif;
   font-weight: 500;
   color: #333;
   font-size: 12px;
-  margin-bottom: 8px;
+  margin-bottom: 2px;
 }
 .p-card-list__employee span:nth-child(3) {
   color: #999;
@@ -1061,7 +1064,8 @@ span {
   color: #333;
   font-size: 1rem;
   font-weight: bold;
-  margin-bottom: 8px;
+  margin-bottom: 16px;
+  margin-top: 16px;
 }
 
 .p-card-list__link {
