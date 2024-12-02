@@ -94,27 +94,26 @@
       <section class="l-form__area">
         <form action="#">
           <div class="p-form__item">
-            <label for="username" class="c-text p-form__ttl"
-              >氏名<strong class="c-text label-required">必須</strong></label
-            >
+            <div class="p-username">
+              <label for="username" class="c-text p-form__ttl"
+                >氏名<strong class="c-text label-required">必須</strong></label
+              >
+            </div>
             <div class="p-form__boby">
-              <div class="p-inputFeild _half">
-                <input
-                  type="text"
-                  name="username"
-                  id="username"
-                  maxlength="20"
-                  required
-                />
+              <div class="p-inputFeild">
+                <input type="text" name="username" id="username" required />
               </div>
             </div>
           </div>
+
           <div class="p-form__item">
-            <label for="email" class="c-text p-form__ttl"
-              >メールアドレス<strong class="c-text label-required"
-                >必須</strong
-              ></label
-            >
+            <div class="p-adress">
+              <label for="email" class="c-text p-form__ttl"
+                >メールアドレス<strong class="c-text label-required"
+                  >必須</strong
+                ></label
+              >
+            </div>
             <div class="p-form__boby">
               <div class="p-inputFeild">
                 <input
@@ -129,11 +128,13 @@
             </div>
           </div>
           <div class="p-form__item">
-            <label for="age" class="c-text p-form__ttl"
-              >生年月日<strong class="c-text label-required"
-                >必須</strong
-              ></label
-            >
+            <div class="p-birth">
+              <label for="age" class="c-text p-form__ttl"
+                >生年月日<strong class="c-text label-required"
+                  >必須</strong
+                ></label
+              >
+            </div>
             <div class="p-form__boby">
               <div class="p-inputFeild _half">
                 <input
@@ -149,7 +150,7 @@
           </div>
           <div class="p-form__item">
             <fieldset>
-              <div class="c-text p-form__ttl">
+              <div class="c-text p-form__ttl p-carrier">
                 <legend>希望職種<span class="label-any">任意</span></legend>
               </div>
               <div class="p-form__boby">
@@ -182,11 +183,13 @@
             </fieldset>
           </div>
           <div class="p-form__item">
-            <label for="motive" class="p-form__ttl c-text"
-              >志望動機<strong class="c-text label-required"
-                >必須</strong
-              ></label
-            >
+            <div class="p-motive">
+              <label for="motive" class="p-form__ttl c-text"
+                >志望動機<strong class="c-text label-required"
+                  >必須</strong
+                ></label
+              >
+            </div>
             <div class="p-form__boby">
               <div class="p-inputFeild">
                 <textarea cols="30" rows="5" required></textarea>

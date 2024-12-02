@@ -27,7 +27,7 @@
       <nav class="p-header__nav">
         <ul class="p-heder__nav-lists">
           <li class="c-text p-header__nav-item"><a href=<?php the_permalink(13); ?>>会社概要</a></li>
-          <li class="c-text p-header__nav-item"><a href="#service">事業紹介</a></li>
+          <li class="c-text p-header__nav-item"><a href=<?php echo home_url('/'); ?>#service>事業紹介</a></li>
           <li class="c-text p-header__nav-item"><a href=<?php echo home_url('/interview') ?>>社員紹介</a></li>
           <li class="c-text p-header__nav-item p-header__entry"><a href=<?php the_permalink(20); ?>>Entry</a></li>
         </ul>
@@ -43,7 +43,7 @@
         </h1>
         <ul class="p-sp__menu-list">
           <li class="c-text p-sp__menu-item"><a href=<?php the_permalink(13); ?>>会社概要</a></li>
-          <li class="c-text p-sp__menu-item"><a href="">事業紹介</a></li>
+          <li class="c-text p-sp__menu-item"><a href=<?php echo home_url('/'); ?>#service>事業紹介</a></li>
           <li class="c-text p-sp__menu-item"><a href=<?php echo home_url('/interview') ?>>社員紹介</a></li>
           <li class="c-button p-sp__menu-item"><a href=<?php the_permalink(20); ?>>Entry</a></li>
         </ul>

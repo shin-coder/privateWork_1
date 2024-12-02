@@ -75,7 +75,11 @@ body {
     place-items: center;
     font-family: "Hind", sans-serif;
     font-size: 24px;
-    background: linear-gradient(90deg, rgb(79, 172, 179) 0%, rgb(62, 153, 112) 100%);
+    background: linear-gradient(
+      90deg,
+      rgb(79, 172, 179) 0%,
+      rgb(62, 153, 112) 100%
+    );
     color: #fff;
     height: 60px;
     width: 200px;
@@ -269,7 +273,11 @@ span {
 
 .l-interview {
   position: relative;
-  background: linear-gradient(90deg, rgb(79, 172, 179) 0%, rgb(62, 153, 112) 100%);
+  background: linear-gradient(
+    90deg,
+    rgb(79, 172, 179) 0%,
+    rgb(62, 153, 112) 100%
+  );
   color: #fff;
   margin-right: calc(50% - 50vw);
   margin-left: calc(50% - 50vw);
@@ -384,7 +392,11 @@ span {
   width: 200px;
   padding: 16px;
   border-radius: 50px;
-  background: linear-gradient(90deg, rgb(79, 172, 179) 0%, rgb(62, 153, 112) 100%);
+  background: linear-gradient(
+    90deg,
+    rgb(79, 172, 179) 0%,
+    rgb(62, 153, 112) 100%
+  );
   color: #fff;
   font-family: "Zen Kaku Gothic New", sans-serif;
   display: flex;
@@ -403,7 +415,11 @@ span {
     width: 230px;
     padding: 16px;
     border-radius: 50px;
-    background: linear-gradient(90deg, rgb(79, 172, 179) 0%, rgb(62, 153, 112) 100%);
+    background: linear-gradient(
+      90deg,
+      rgb(79, 172, 179) 0%,
+      rgb(62, 153, 112) 100%
+    );
   }
 }
 .c-button--white {
@@ -429,7 +445,11 @@ span {
   width: 40px;
   padding: 4px;
   border-radius: 50px;
-  background: linear-gradient(90deg, rgb(79, 172, 179) 0%, rgb(62, 153, 112) 100%);
+  background: linear-gradient(
+    90deg,
+    rgb(79, 172, 179) 0%,
+    rgb(62, 153, 112) 100%
+  );
   text-align: center;
   color: #fff;
   font-weight: bold;
@@ -440,7 +460,11 @@ span {
     width: 60px;
     padding: 10px;
     border-radius: 50px;
-    background: linear-gradient(90deg, rgb(79, 172, 179) 0%, rgb(62, 153, 112) 100%);
+    background: linear-gradient(
+      90deg,
+      rgb(79, 172, 179) 0%,
+      rgb(62, 153, 112) 100%
+    );
     height: 40px;
   }
 }
@@ -458,7 +482,11 @@ span {
   color: #333;
   font-weight: 600;
   font-size: clamp(2rem, 1.296rem + 3vw, 4rem);
-  background: linear-gradient(90deg, rgb(79, 172, 179) 0%, rgb(62, 153, 112) 100%);
+  background: linear-gradient(
+    90deg,
+    rgb(79, 172, 179) 0%,
+    rgb(62, 153, 112) 100%
+  );
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -785,7 +813,11 @@ span {
 }
 
 .p-recruit__text-area {
-  background: linear-gradient(90deg, rgb(79, 172, 179) 0%, rgb(62, 153, 112) 100%);
+  background: linear-gradient(
+    90deg,
+    rgb(79, 172, 179) 0%,
+    rgb(62, 153, 112) 100%
+  );
   border-radius: 10px;
   width: 80%;
   max-width: 800px;
@@ -1112,11 +1144,14 @@ span {
 
 .p-contact__image {
   position: relative;
-  background-image: url(../../assets/img/contact-image.png);
-  width: 100%;
+  background-image: url(../assets/img/contact-image.png);
   height: min(50vh, 390px);
   background-size: cover;
   background-position: center;
+  margin-right: calc(50% - 50vw);
+  margin-left: calc(50% - 50vw);
+  padding-right: calc(50vw - 50%);
+  padding-left: calc(50vw - 50%);
 }
 .p-contact__image::before {
   background-color: rgba(0, 0, 0, 0.6);
@@ -1151,12 +1186,12 @@ span {
 /* ==================================================================
 フォーム部品スタイル
 =================================================================== */
-input[type=text],
-input[type=search],
-input[type=email],
-input[type=url],
-input[type=tel],
-input[type=number],
+input[type="text"],
+input[type="search"],
+input[type="email"],
+input[type="url"],
+input[type="tel"],
+input[type="number"],
 textarea {
   -webkit-appearance: none;
   appearance: none;
@@ -1167,7 +1202,7 @@ textarea {
   font-size: 16px;
 }
 
-input[type=password] {
+input[type="password"] {
   /* ユーザーがパスワードを表示/非表示にさせる時、
   appearance: none; はこの機能を無効にさせる可能性がある。 */
   width: 100%;
@@ -1200,15 +1235,15 @@ input[type=password] {
 
 /*ラジオボタン・チェックボックス
 ------------------------------------*/
-input[type=radio],
-input[type=checkbox] {
+input[type="radio"],
+input[type="checkbox"] {
   opacity: 0;
   position: absolute;
 }
 
 /*クリック範囲*/
-input[type=radio] + span,
-input[type=checkbox] + span {
+input[type="radio"] + span,
+input[type="checkbox"] + span {
   display: inline-block;
   position: relative;
   margin: 0 2em 0 0;
@@ -1219,13 +1254,13 @@ input[type=checkbox] + span {
 }
 
 /*フォーカス時*/
-input[type=radio]:focus + span,
-input[type=checkbox]:focus + span {
+input[type="radio"]:focus + span,
+input[type="checkbox"]:focus + span {
   outline: 1px solid #ccc;
 }
 
 /*ラジオボタンスタイル*/
-input[type=radio] + span:before {
+input[type="radio"] + span:before {
   content: "";
   position: absolute;
   top: 50%;
@@ -1242,7 +1277,7 @@ input[type=radio] + span:before {
 /*ラジオボタンチェック印（未選択）*/
 /*ラジオボタンチェック印（選択）*/
 /*チェックボックススタイル*/
-input[type=checkbox] + span:before {
+input[type="checkbox"] + span:before {
   content: "";
   position: absolute;
   top: 50%;
@@ -1257,13 +1292,13 @@ input[type=checkbox] + span:before {
 }
 
 /*チェックボックス未チェック時*/
-input[type=checkbox] + span:after {
+input[type="checkbox"] + span:after {
   content: "";
   display: none;
 }
 
 /*チェックボックスチェック時*/
-input[type=checkbox]:checked + span:after {
+input[type="checkbox"]:checked + span:after {
   content: "";
   display: block;
   position: absolute;
@@ -1361,9 +1396,6 @@ label {
 }
 
 @media screen and (min-width: 768px) {
-  .p-form__ttl {
-    width: 30%;
-  }
   .p-form__boby {
     width: 70%;
   }
@@ -1413,7 +1445,7 @@ label {
 }
 
 /* デフォルトのボタン */
-input[type=radio] {
+input[type="radio"] {
   opacity: 0; /* デフォルトのボタンを非表示 */
   position: absolute;
 }
@@ -1432,7 +1464,7 @@ input[type=radio] {
 }
 
 /* チェック後のボタン */
-input[type=radio]:checked + .wpcf7-list-item-label::before {
+input[type="radio"]:checked + .wpcf7-list-item-label::before {
   background-color: #7fbfff; /* チェック後の中心の色 */
   box-shadow: inset 0 0 0 3px #fff; /* 中心の色のスタイル */
 }
@@ -1468,8 +1500,9 @@ input[type=radio]:checked + .wpcf7-list-item-label::before {
 }
 
 /* チェック状態のスタイル - inputとlabelの順序に関係なく適用 */
-.wpcf7-list-item input[type=radio]:checked ~ .wpcf7-list-item-label::before,
-.wpcf7-list-item .wpcf7-list-item-label:has(+ input[type=radio]:checked)::before {
+.wpcf7-list-item input[type="radio"]:checked ~ .wpcf7-list-item-label::before,
+.wpcf7-list-item
+  .wpcf7-list-item-label:has(+ input[type="radio"]:checked)::before {
   background-color: #3e9970;
   box-shadow: inset 0 0 0 3px #fff;
 }
@@ -1477,6 +1510,15 @@ input[type=radio]:checked + .wpcf7-list-item-label::before {
 /* 最後のラジオボタンの右マージンを削除 */
 .wpcf7-list-item.last {
   margin-right: 0;
+}
+
+/* 独自設定 */
+.p-username,
+.p-adress,
+.p-birth,
+.p-carrier,
+.p-motive {
+  width: 200px;
 }
 
 /* Utlity
@@ -1559,4 +1601,4 @@ input[type=radio]:checked + .wpcf7-list-item-label::before {
 
 .mt-160 {
   margin-top: 160px;
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */

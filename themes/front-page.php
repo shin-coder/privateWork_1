@@ -28,7 +28,7 @@ get_header(); ?>
           </div>
         </section>
         <section id="service" class="l-service">
-          <h2 class="c-head fade">事業紹介</h2>
+          <h2 class="c-head p-service__title fade">Our Services</h2>
           <ul class="p-service__list mt-48">
             <li class="p-service__item">
               <div class="p-service__item-wrap fade">
@@ -78,7 +78,7 @@ get_header(); ?>
           </ul>
         </section>
         <section id="interview" class="l-interview">
-          <h2 class="c-head p-interview__head fade">社員紹介</h2>
+          <h2 class="c-head p-interview__head fade">Interview</h2>
           <div class="swiper mySwiper fade">
             <div class="swiper-wrapper">
                 <?php
@@ -137,16 +137,27 @@ get_header(); ?>
               <a href="<?php echo $news_link; ?>" class="c-button--small p-news__link">→</a>
             </div>
           </div>
-          <ul class="p-news__list fade">
-            <li class="p-news__item">
-              <time datetime="2024-07-05">2024.07.05</time>
-              <a>WEBサイトをリニューアルしました</a>
-            </li>
-            <li class="p-news__item">
-              <time datetime="2024-06-01">2024.06.01</time>
-              <a>社員イタンビューを更新しました</a>
-            </li>
-          </ul>
+          <div class="p-news__wrap">
+            <ul class="p-news__list fade">
+              <?php if(have_posts()): ?>
+                <?php while (have_posts()): the_post(); ?>
+                  <li class="p-news__item">
+                    <time datetime="<?php the_time('c'); ?>"><?php the_time('Y/n/j'); ?></time>
+                    <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                  </li>
+                <?php endwhile; ?>
+                <?php else: ?>
+              <?php endif; ?>
+              <!-- <li class="p-news__item">
+                <time datetime="2024-07-05">2024.07.05</time>
+                <a>WEBサイトをリニューアルしました</a>
+              </li>
+              <li class="p-news__item">
+                <time datetime="2024-06-01">2024.06.01</time>
+                <a>社員イタンビューを更新しました</a>
+              </li> -->
+            </ul>
+          </div>
         </section>
         <section class="l-recruit">
           <picture class="p-recruit__image fade">
@@ -154,7 +165,7 @@ get_header(); ?>
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/recruit-image.png" alt="" />
           </picture>
           <div class="p-recruit__text-area fade">
-            <h2 class="c-head p-recruit__head">採用情報</h2>
+            <h2 class="c-head p-recruit__head">Recruit</h2>
             <p class="c-text p-recruit__text">
               私たちと共に、環境に優しい包装の未来を創造できる仲間を募集しています。
             </p>
@@ -162,10 +173,6 @@ get_header(); ?>
               <p>エントリーはこちらから</p>
               <a href="" class="c-button--small p-entry__button">→</a>
             </div>
-            <!-- <div class="p-entry-area">
-              <p>中途採用はこちらから</p>
-              <a href="" class="c-button--small p-entry__button">→</a>
-            </div> -->
           </div>
         </section>
         <?php get_footer(); ?>
