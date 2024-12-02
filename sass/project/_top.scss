@@ -1,6 +1,6 @@
-@use '../setting' as set;
-@use '../common/button' as button;
-@use '../common/typeFace' as type;
+@use "../setting" as set;
+@use "../common/button" as button;
+@use "../common/typeFace" as type;
 
 .active-body {
   overflow-y: hidden;
@@ -58,6 +58,7 @@
     @include set.media(lg) {
       display: flex;
       justify-content: space-between;
+      margin-top: 2.5rem;
     }
   }
   &__text {
@@ -66,7 +67,7 @@
     }
   }
   &__button {
-    font-size: clamp(0.875rem, 0.831rem + 0.19vw, 1rem);
+    font-size: clamp(0.75rem, 0.679rem + 0.36vw, 1rem);
     margin-left: auto;
     margin-right: 0;
     transition: 0.5s;
@@ -77,6 +78,11 @@
 }
 
 .p-service {
+  &__title {
+    font-family: set.$hind;
+    color: #333;
+    font-weight: 600;
+  }
   &__item {
     padding: 24px 0;
     border-top: 1px solid #999;
@@ -89,7 +95,7 @@
       padding: 40px 0;
       display: grid;
       align-items: center;
-      grid-template-columns: 380px 1fr 80px;
+      grid-template-columns: 220px 1fr 80px;
       column-gap: 16px;
     }
   }
@@ -97,13 +103,14 @@
     font-family: set.$zenkaku;
     color: set.$black;
     font-weight: bold;
-    font-size: clamp(1.5rem, 1.148rem + 1.5vw, 2.5rem);
+    font-size: clamp(1.125rem, 1.018rem + 0.54vw, 1.5rem);
     sup {
       color: set.$green;
-      margin-right: 16px;
+      margin-right: 0.5rem;
     }
   }
   &__text {
+    margin-top: 1rem;
     @include set.media(lg) {
       padding: 0 24px;
     }
@@ -111,6 +118,7 @@
   &__link {
     margin-right: 0;
     margin-left: auto;
+    margin-top: 1rem;
     transition: 0.5s;
     &:hover {
       opacity: 0.6;
@@ -151,6 +159,7 @@
 .p-interview__head {
   color: #fff;
   margin-bottom: 50px;
+  font-family: set.$hind;
   @include set.media(xl) {
     text-align-last: left;
   }
@@ -162,7 +171,13 @@
 }
 
 .swiper-pagination {
-  padding-bottom: 80px;
+  padding-bottom: 2rem;
+  font-size: 0.875rem;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: clamp(1.125rem, 1.018rem + 0.54vw, 1.5rem);
 }
 
 .swiper-button-next,
@@ -176,14 +191,14 @@
   & .p-article__image {
     display: block;
     max-width: 400px;
-    width: 85%;
+    width: 60%;
     margin: 0 auto;
   }
   & .p-article__title {
     text-align: center;
     font-size: clamp(1rem, 0.824rem + 0.75vw, 1.5rem);
     font-weight: bold;
-    margin-top: 32px;
+    margin-top: 1.5rem;
   }
   small {
     display: block;
@@ -195,6 +210,7 @@
     margin: 0 auto;
     margin-top: 20px;
     transition: 0.5s;
+    font-size: clamp(0.75rem, 0.679rem + 0.36vw, 1rem);
     &:hover {
       opacity: 0.6;
     }
@@ -205,17 +221,17 @@
   position: absolute;
   top: 45%;
   left: -10%;
-  transform: (-45%, 10%);
+  transform: translateY(-45%);
   z-index: 0;
   font-family: set.$hind;
-  font-weight: bold;
+  font-weight: 200;
   color: #fff;
   font-size: clamp(4rem, 3.208rem + 3.38vw, 6.25rem);
   opacity: 0.3;
   text-transform: uppercase;
   white-space: nowrap;
   .loop-1 {
-    animation: loop 200s linear infinite;
+    animation: loop 800s linear infinite;
   }
   .loop-2 {
     position: absolute;
@@ -251,6 +267,20 @@
   }
 }
 
+.p-news__wrap {
+  @include set.media(lg) {
+    margin-top: 5rem;
+  }
+}
+
+.p-news__list {
+  @include set.media(lg) {
+    width: 60%;
+    margin-right: 0;
+    margin-left: auto;
+  }
+}
+
 .p-news__link {
   transition: 0.5s;
   &:hover {
@@ -262,6 +292,9 @@
   padding-top: 24px;
   padding-bottom: 24px;
   border-bottom: 1px solid #333;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
   &:nth-of-type(1) {
     margin-top: 20px;
   }
@@ -271,8 +304,8 @@
   }
   a {
     display: block;
-    margin-top: 4px;
     font-size: clamp(0.875rem, 0.787rem + 0.38vw, 1.125rem);
+    font-family: set.$zenkaku;
   }
 }
 
@@ -283,30 +316,28 @@
 }
 
 .p-recruit__text-area {
-  background: linear-gradient(90deg, rgba(79, 172, 179, 1) 0%, rgba(62, 153, 112, 1) 100%);
-  border-radius: 20px;
-  transform: translate(20%, -10%);
-  padding-top: 24px;
-  padding-bottom: 24px;
-  padding-left: 5%;
-  @include set.media(sm) {
-    transform: translate(30%, -15%);
-  }
-  @include set.media(lg) {
-    transform: translate(40%, -30%);
-  }
-  @include set.media(xl) {
-    transform: translate(50%, -50%);
-  }
+  background: linear-gradient(
+    90deg,
+    rgba(79, 172, 179, 1) 0%,
+    rgba(62, 153, 112, 1) 100%
+  );
+  border-radius: 10px;
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 3rem;
+  margin-top: -10%;
 
   .p-recruit__head {
-    text-align-last: left;
+    text-align: center;
     color: #fff;
   }
 
   .p-recruit__text {
     width: 40ch;
     color: #fff;
+    text-align: center;
+    margin: 0 auto;
     margin-top: 24px;
   }
 }
@@ -314,8 +345,8 @@
 .p-entry-area {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 4%;
-  gap: 10%;
 
   color: #fff;
   margin-top: 32px;
